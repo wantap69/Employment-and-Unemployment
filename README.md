@@ -56,7 +56,8 @@ This analysis is particularly relevant for policymakers, educators, and job seek
    - Identify leading employment contributors  
 3. *Statistical Analysis*  
    - Chi-square test (education vs. unemployment)  
-   - Correlation test (education vs. wages)  
+   - Correlation test (education vs. wages)
+   - Regression Analysis
 4. *Visualization & Reporting*  
    - Create charts and dashboards (static or Shiny app)  
    - Summarize key insights in RMarkdown
