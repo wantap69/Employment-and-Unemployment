@@ -23,8 +23,6 @@ This analysis is particularly relevant for policymakers, educators, and job seek
 4. Which sub-sector contributes the most to employment?
 5. Is there a significant association between unemployment and highest educational attainment?
 6. Is there a correlation between wages and highest educational attainment?
-7. Is there a significant association betweeen dependent variable wage and independent variable highest educational attainment 
-
 ---
 
 ## 🧰 Tools and Technologies Used
@@ -34,7 +32,6 @@ This analysis is particularly relevant for policymakers, educators, and job seek
   - ggplot2 – for data visualization  
   - janitor – for cleaning variable names  
   - readr – for loading CSV or DAT files  
-  - survey or srvyr – for weighted survey analysis (if applicable)
   - stats – for correlation and significance tests
 
 ---
