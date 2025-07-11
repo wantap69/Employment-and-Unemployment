@@ -68,7 +68,7 @@ This analysis is particularly relevant for policymakers, educators, and job seek
 ## 📌 Project Status
 
 - [x] Project planning  
-- [ ] Data collection and cleaning  
+- [x] Data collection and cleaning  
 - [ ] EDA and visualization  
 - [ ] Modeling and statistical testing  
 - [ ] Final report and insights  
