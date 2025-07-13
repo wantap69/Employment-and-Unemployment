@@ -18,11 +18,10 @@ This analysis is particularly relevant for policymakers, educators, and job seek
 ## ❓ Key Research Questions
 
 1. What is the distribution of employed individuals across major sectors?
-2. What is the distribution of employed individuals within each sub-sector?
-3. Which sector is the leading contributor to employment in NCR?
-4. Which sub-sector contributes the most to employment?
-5. Is there a significant association between unemployment and highest educational attainment?
-6. Is there a correlation between wages and highest educational attainment?
+2. Which sector is the leading contributor to employment in NCR?
+3. Which sub-sector contributes the most to employment?
+4. Is there a significant association between unemployment and highest educational attainment?
+5. Is there a correlation between wages and highest educational attainment?
 ---
 
 ## 🧰 Tools and Technologies Used
