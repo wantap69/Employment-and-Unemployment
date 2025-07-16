@@ -65,7 +65,7 @@ This analysis is particularly relevant for policymakers, educators, and job seek
 
 - [x] Project planning  
 - [x] Data collection and cleaning  
-- [ ] EDA and visualization  
+- [x] EDA and visualization  
 - [ ] Modeling and statistical testing  
 - [ ] Final report and insights  
 
