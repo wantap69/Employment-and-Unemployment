@@ -41,11 +41,6 @@ This project analyzes employment and unemployment trends in the **National Capit
 - **Weighted population estimates** and **raw frequencies** were both analyzed.
 - **Normality tests** suggest that employment weights in Industry and Services are **not normally distributed**, supporting the use of **log transformation** in further modeling.
 
-## 📌 Future Directions
-
-- Comparative analysis of **employed vs. unemployed** demographics
-- **Inferential modeling** (e.g., logistic regression)
-- Trend analysis across time (if additional survey waves are included)
 
 ## 👤 Author
 
