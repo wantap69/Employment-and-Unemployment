@@ -11,7 +11,7 @@ This project analyzes employment and unemployment trends in the **National Capit
 
 ## 📁 File Contents
 
-- `data_filter.html`: An interactive HTML document generated from an R Markdown or Quarto script. It contains:
+- `ncr_employment.html`: An interactive HTML document generated from an R Markdown or Quarto script. It contains:
   - **Data Cleaning steps**
   - **Variable transformation** and recoding (e.g., major/sub-sector, employment status)
   - **Exploratory Data Analysis (EDA)**
@@ -45,6 +45,7 @@ This project analyzes employment and unemployment trends in the **National Capit
 ## 👤 Author
 
 **Benedict Bautista**  
+Bulacan State University
 BS in Applied Statistics — Philippines
 
 ## 🔗 References
