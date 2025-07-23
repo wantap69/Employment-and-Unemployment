@@ -1,85 +1,61 @@
-📊 Analyzing Employment and Unemployment Drivers in NCR, Philippines
-## 📘 Project Overview
-This project explores the key factors contributing to employment and unemployment in the *National Capital Region (NCR)* of the Philippines. By examining labor force data, we aim to understand which *economic sectors and sub-sectors* drive employment, and whether *educational attainment* has a measurable impact on *wages and unemployment rates*.
+# Sectoral Analysis of Employment in Metro Manila Using PSA’s LFS Data
 
-This analysis is particularly relevant for policymakers, educators, and job seekers aiming to understand the evolving labor landscape in NCR.
+## 📄 Overview
 
----
+This project analyzes employment and unemployment trends in the **National Capital Region (NCR)** using data from the **Philippine Statistics Authority's Labor Force Survey (LFS)** for **March 2024**. The analysis focuses on:
+- Distribution of the workforce across **major sectors** (Agriculture, Industry, Services)
+- Breakdown by **sub-industries**
+- **Normality testing** of employment weights
+- Visualization of weighted and unweighted frequencies
+- Initial insights into which sectors dominate NCR's labor force
 
-## 🎯 Objectives
+## 📁 File Contents
 
-- Identify the distribution of employment across major sectors and sub-sectors.
-- Determine which sectors and sub-sectors contribute the most to NCR's employment.
-- Examine the association between *educational attainment and unemployment status*.
-- Analyze the correlation between *educational attainment and wage levels*.
+- `data_filter.html`: An interactive HTML document generated from an R Markdown or Quarto script. It contains:
+  - **Data Cleaning steps**
+  - **Variable transformation** and recoding (e.g., major/sub-sector, employment status)
+  - **Exploratory Data Analysis (EDA)**
+  - **Normality testing** using Shapiro–Francia Test (`sf.test`)
+  - **Plots and tables** for employment frequency and distribution
 
----
+## 🧪 Methodology
 
-## ❓ Key Research Questions
+- **Dataset Source**: PSA's LFS data downloaded from [psada.gov.ph](https://psada.psa.gov.ph/catalog/LFS/about)
+- **Tools Used**:
+  - `tidyverse`: For data wrangling and visualization
+  - `nortest`: For normality testing
+  - `pander`: For generating APA-style tables
+  - `here`: For relative file path management
 
-1. What is the distribution of employed individuals across major sectors?
-2. Which sector is the leading contributor to employment in NCR?
-3. Which sub-sector contributes the most to employment?
-4. Is there a significant association between unemployment and highest educational attainment?
-5. Is there a correlation between wages and highest educational attainment?
----
+- **Key Variables**:
+  - `PUFC15_PKB`: Industry classification (used to derive major and sub-sectors)
+  - `PUFREG`: Region (filtered for NCR only)
+  - `PUFC09_WORK`: Employment status (employed/unemployed)
+  - `PUFC07_GRADE`: Educational attainment
+  - `PUFWGTPRV`: Final sampling weight (used for population estimation)
 
-## 🧰 Tools and Technologies Used
+## 📊 Highlights from the Report
 
-- *R*
-  - dplyr – for data cleaning and transformation  
-  - ggplot2 – for data visualization  
-  - janitor – for cleaning variable names  
-  - readr – for loading CSV or DAT files  
-  - stats – for correlation and significance tests
+- The **Services sector** overwhelmingly dominates NCR employment.
+- The **Industry sector** is second, while **Agriculture** accounts for the smallest portion.
+- **Weighted population estimates** and **raw frequencies** were both analyzed.
+- **Normality tests** suggest that employment weights in Industry and Services are **not normally distributed**, supporting the use of **log transformation** in further modeling.
 
----
+## 📌 Future Directions
 
-## 📂 Data Source
+- Comparative analysis of **employed vs. unemployed** demographics
+- **Inferential modeling** (e.g., logistic regression)
+- Trend analysis across time (if additional survey waves are included)
 
-- *Labor Force Survey (LFS)* — National Capital Region subset  
-- Period: [e.g., October 2023]  
-- Source: [Philippine Statistics Authority](https://psa.gov.ph/statistics/survey/labor-and-employment/labor-force-survey)
+## 👤 Author
 
----
+**Benedict Bautista**  
+BS in Applied Statistics — Philippines
 
-## 📈 Methodology
+## 🔗 References
 
-1. *Data Cleaning*  
-   - Remove missing or invalid entries  
-   - Apply sampling weights (if necessary)  
-2. *Exploratory Data Analysis (EDA)*  
-   - Visualize employment per sector/sub-sector  
-   - Identify leading employment contributors  
-3. *Statistical Analysis*  
-   - Chi-square test (education vs. unemployment)  
-   - Correlation test (education vs. wages)
-   - Regression Analysis
-4. *Visualization & Reporting*  
-   - Create charts and dashboards (static or Shiny app)  
-   - Summarize key insights in RMarkdown
+- [Philippine Statistics Authority LFS Catalog](https://psada.psa.gov.ph/catalog/LFS/about)
+- PSA Labor Force Survey — March 2024
 
 ---
 
-## 📌 Project Status
-
-- [x] Project planning  
-- [x] Data collection and cleaning  
-- [x] EDA and visualization  
-- [ ] Modeling and statistical testing  
-- [ ] Final report and insights  
-
----
-
-## 🧠 Author
-
-*Benedict Bautista*  
-BS Mathematics specialized in Applied Statistics, Philippines  
-Portfolio: https://github.com/wantap69
-Contact: bendenbautista@gmail.com
-
----
-
-## 📎 License
-
-This project is for educational and academic portfolio purposes. Data used belongs to their respective sources.
